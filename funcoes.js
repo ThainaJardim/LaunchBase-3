@@ -12,9 +12,8 @@ const usuarios = [
         tecnologias: [ 'HTML', 'Node.js']
     }
 ]
-
-    for (let i=0; i < programadores.length; i++)
-    console.log (`${usuarios[i].nome}, trabalha com ${usuarios[i].tecnologias}`)
-
-
-
+//para(usuario de usuarios)
+    for( usuario of usuarios) {
+        //faça alguma coisa
+        console.log (`${usuario.nome} trabalha com ${usuario.tecnologias.join (', ')}` )
+    }
